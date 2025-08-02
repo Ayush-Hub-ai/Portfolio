@@ -47,9 +47,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ayush Dubey</span><br> Web Designer</h1>
 
-                    <a href="#contact
-                    
-                    " class="button">Contact</a>
+                    <a href="#contact" class="button">Contact</a>
                 </div>
 
                 <div class="home__social">
@@ -185,12 +183,13 @@
                         <p><strong>Email:</strong> <a href="mailto:ayushrounak717@gmail.com">ayushrounak717@gmail.com</a></p>
                         <p><strong>Phone:</strong> <a href="tel:+917398989903">+91 73989 89903</a></p>
                     </div>
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form action="mailto:ayushrounak717@gmail.com" method="POST" enctype="text/plain" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" cols="0" rows="10" class="contact__input" placeholder="Your message..." required></textarea>
+                        <input type="submit" value="Send Message" class="contact__button button">
                     </form>
+
                 </div>
             </section>
         </main>
